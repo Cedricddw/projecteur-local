@@ -1,22 +1,15 @@
-# Site Pro'Jecteur
+# Site Pro'Jecteur — V2 lancement
 
-Version finale construite à partir de la maquette validée.
+Version corrigée pour mise en ligne :
+- faux avis supprimés ;
+- section de confiance factuelle ;
+- lien Avis retiré du menu ;
+- responsive conservé ;
+- formulaire prêt à être relié à la messagerie professionnelle ;
+- mentions légales et confidentialité signalées comme à finaliser avant lancement commercial.
 
-## Fichiers
+Fichiers à téléverser à la racine du dépôt GitHub :
 - index.html
 - styles.css
 - script.js
-- assets/hero-visual.jpg
-- assets/phone-cta.jpg
-
-## Utilisation
-Ouvrez `index.html` dans un navigateur.
-
-## Avant publication
-1. Remplacer les témoignages d'exemple par de vrais avis clients.
-2. Compléter les mentions légales et la politique de confidentialité.
-3. Relier le formulaire à une vraie solution d'envoi.
-4. Ajouter votre e-mail professionnel et éventuellement votre téléphone.
-5. Choisir et connecter votre nom de domaine.
-
-Le formulaire ne transmet actuellement aucune donnée.
+- assets/

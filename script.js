@@ -6,7 +6,7 @@ const status = document.getElementById("formStatus");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  status.textContent = "Le formulaire est prêt. Il reste à le relier à votre adresse e-mail ou à votre service d’envoi avant publication.";
+  status.textContent = "Merci. Le formulaire sera activé très prochainement. Vous pourrez alors envoyer votre demande directement à Pro’Jecteur.";
 });
 
 const dialogs = {
