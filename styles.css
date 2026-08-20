@@ -277,3 +277,39 @@ body{background:#f7f9fc}
     padding:44px 0 40px!important;
   }
 }
+
+/* V8.1 — HERO PLATEFORMES */
+.hero-grid{
+  grid-template-columns:1.02fr .98fr!important;
+  align-items:center!important;
+  gap:56px!important;
+}
+.hero-copy{max-width:none!important;padding:64px 0!important}
+.hero-social-visual{display:flex;align-items:center;justify-content:center;padding:42px 0}
+.social-panel{
+  width:min(100%,480px);padding:30px;border-radius:24px;
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.13);
+  box-shadow:0 24px 60px rgba(0,0,0,.16);
+}
+.social-panel-title{font-size:20px;font-weight:800;color:#fff;margin-bottom:20px}
+.social-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.social-tile{
+  min-height:78px;padding:14px 16px;display:flex;align-items:center;gap:12px;
+  border-radius:15px;background:#fff;color:#172033;font-weight:750;
+}
+.social-mark{
+  width:38px;height:38px;border-radius:11px;display:grid;place-items:center;
+  background:#eef4ff;color:#3973e6;font-size:22px;font-weight:900;
+}
+.social-mark.google{font-family:Arial,sans-serif}
+.social-mark.facebook{font-family:Arial,sans-serif;font-size:26px}
+.social-mark.instagram{font-size:27px}
+.social-mark.tiktok{font-size:23px}
+.social-caption{margin-top:18px;color:#cbd5e1;font-size:13px;line-height:1.5}
+@media(max-width:760px){
+ .hero-grid{grid-template-columns:1fr!important;gap:0!important}
+ .hero-copy{padding:42px 0 18px!important}
+ .hero-social-visual{padding:10px 0 38px}
+ .social-panel{padding:20px;border-radius:18px}
+}
