@@ -21,10 +21,9 @@ button,input,textarea{font:inherit}
 .nav{height:70px;display:flex;align-items:center;gap:34px}
 .logo{display:flex;flex-direction:column;min-width:250px;font-weight:900;line-height:.9}
 .logo-main{font-size:26px;letter-spacing:-1px}
-.logo-main::first-letter{color:#fff}
 .logo-main{color:#ffbf1d}
-.logo-main:before{content:"";color:#fff}
-.logo-main .logo-bulb{display:inline-block;color:#ffbf1d;margin:0 -1px}
+.logo-main .logo-pro{color:#fff}
+.logo-main .logo-apostrophe{color:#ffbf1d;display:inline-block;margin:0 1px}
 .logo small{font-size:9px;color:#fff;font-weight:600;margin-top:5px}
 .navlinks{display:flex;align-items:stretch;justify-content:center;gap:36px;flex:1;height:100%}
 .navlinks a{display:flex;align-items:center;font-size:14px;font-weight:700;position:relative}
