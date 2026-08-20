@@ -18,3 +18,5 @@ IMPORTANT :
 L’activité n’étant pas encore immatriculée, les mentions légales indiquent explicitement que les
 informations d’identité/immatriculation seront complétées avant toute facturation commerciale.
 Dès obtention du SIREN/SIRET, mettre à jour ces mentions avant le lancement commercial définitif.
+
+V5.1 : titre principal ajusté pour éviter toute promesse implicite de résultats : « Plus facile à trouver près de chez vous. »
