@@ -21,8 +21,9 @@ Dès obtention du SIREN/SIRET, mettre à jour ces mentions avant le lancement co
 
 V5.1 : titre principal ajusté pour éviter toute promesse implicite de résultats : « Plus facile à trouver près de chez vous. »
 
-V6.1 Modern Digital corrigée :
-- utilise les vraies classes CSS du site (.dark, .round-icon, .step-num, .popular, .price-card.highlight, etc.)
-- bleu nuit + bleu électrique + blanc
-- jaune supprimé de l'interface, sauf accent or discret du logo
-- contenu, tarifs, formulaire Formspree et fonctionnalités inchangés
+V7 Clean Modern
+- Palette d'origine remplacée directement dans la feuille CSS.
+- Bleu nuit #0B1628, bleu moderne #3973E6, bleu clair #5B8FF9.
+- Or conservé uniquement comme micro-accent de marque.
+- Cache-busting styles.css?v=7 ajouté dans index.html.
+- Contenu, prix, limites commerciales et Formspree inchangés.
