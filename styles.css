@@ -46,7 +46,7 @@ button,input,textarea{font:inherit}
 .benefit b{font-size:38px;color:var(--yellow);line-height:1}
 .benefit .gicon{font-size:34px;background:conic-gradient(#4285f4,#34a853,#fbbc05,#ea4335,#4285f4);-webkit-background-clip:text;color:transparent}
 .hero-actions{display:flex;gap:16px}
-.hero-visual{background-image:linear-gradient(90deg,rgba(7,26,45,.12),rgba(7,26,45,0)),url("assets/hero-visual.jpg");background-size:cover;background-position:center center;min-height:410px}
+.hero-visual{background-image:url("assets/hero-visual-v7.png");background-size:cover;background-position:center center;min-height:410px}
 .white{background:#fff}
 .section-compact{padding:24px 0 18px}
 .split-top{display:grid;grid-template-columns:1fr .95fr;gap:48px}
