@@ -20,3 +20,9 @@ informations d’identité/immatriculation seront complétées avant toute factu
 Dès obtention du SIREN/SIRET, mettre à jour ces mentions avant le lancement commercial définitif.
 
 V5.1 : titre principal ajusté pour éviter toute promesse implicite de résultats : « Plus facile à trouver près de chez vous. »
+
+V6 Modern Digital
+- Palette bleu nuit / bleu électrique / blanc, accent or discret.
+- CTA principaux bleus et réduction du jaune.
+- Cartes plus aérées et premium.
+- Tarifs, textes, limites des offres et Formspree inchangés.
