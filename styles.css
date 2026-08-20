@@ -155,3 +155,11 @@ dialog::backdrop{background:rgba(0,0,0,.55)}
 .status.success{color:#16803b;font-weight:700}
 .status.error{color:#b42318;font-weight:700}
 #submitBtn:disabled{opacity:.7;cursor:wait}
+
+.price-card li small{font-size:9px;color:#66717c}
+
+/* V4.1 — rendu fiable du logo texte */
+.logo, .brand, .logo-text {
+  font-variant-ligatures: none;
+  letter-spacing: normal;
+}
