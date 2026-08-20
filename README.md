@@ -1,15 +1,14 @@
-# Site Pro'Jecteur — V2 lancement
+# Pro'Jecteur — V3 formulaire
 
-Version corrigée pour mise en ligne :
-- faux avis supprimés ;
-- section de confiance factuelle ;
-- lien Avis retiré du menu ;
-- responsive conservé ;
-- formulaire prêt à être relié à la messagerie professionnelle ;
-- mentions légales et confidentialité signalées comme à finaliser avant lancement commercial.
+Cette version conserve la V2 et active le formulaire de contact avec Formspree.
 
-Fichiers à téléverser à la racine du dépôt GitHub :
-- index.html
-- styles.css
-- script.js
-- assets/
+Modifications :
+- endpoint Formspree connecté ;
+- envoi AJAX sans quitter la page ;
+- confirmation de succès / message d'erreur ;
+- nom, e-mail, message et consentement transmis ;
+- message obligatoire ;
+- champ anti-spam invisible ;
+- aucun mot de passe e-mail n'est présent dans le site.
+
+Déploiement : remplacer les fichiers correspondants dans le dépôt GitHub Pages.

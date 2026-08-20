@@ -1,12 +1,44 @@
-
 document.getElementById("year").textContent = new Date().getFullYear();
 
 const form = document.getElementById("contactForm");
 const status = document.getElementById("formStatus");
+const submitBtn = document.getElementById("submitBtn");
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", async (e) => {
   e.preventDefault();
-  status.textContent = "Merci. Le formulaire sera activé très prochainement. Vous pourrez alors envoyer votre demande directement à Pro’Jecteur.";
+
+  if (!form.checkValidity()) {
+    form.reportValidity();
+    return;
+  }
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = "Envoi en cours…";
+  status.className = "status";
+  status.textContent = "";
+
+  try {
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { "Accept": "application/json" }
+    });
+
+    if (response.ok) {
+      form.reset();
+      status.className = "status success";
+      status.textContent = "✓ Merci ! Votre demande a bien été envoyée. Je vous répondrai dès que possible.";
+    } else {
+      status.className = "status error";
+      status.textContent = "L’envoi n’a pas abouti. Réessayez dans quelques instants.";
+    }
+  } catch (error) {
+    status.className = "status error";
+    status.textContent = "Impossible d’envoyer la demande pour le moment. Vérifiez votre connexion puis réessayez.";
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.textContent = "✈ Envoyer ma demande";
+  }
 });
 
 const dialogs = {

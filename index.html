@@ -208,14 +208,15 @@
     <div class="contact" id="contact">
       <h2>Me contacter</h2>
       <p class="mini">Une question ? Envie d’en discuter ? Écrivez-moi !</p>
-      <form id="contactForm">
+      <form id="contactForm" action="https://formspree.io/f/mnpalrao" method="POST">
         <div class="two">
-          <label>Votre nom *<input required name="name" placeholder="Nom et prénom"></label>
-          <label>Votre e-mail *<input required type="email" name="email" placeholder="votre@email.fr"></label>
+          <label>Votre nom *<input required name="name" autocomplete="name" placeholder="Nom et prénom"></label>
+          <label>Votre e-mail *<input required type="email" name="email" autocomplete="email" placeholder="votre@email.fr"></label>
         </div>
-        <label>Votre message<textarea name="message" rows="4" placeholder="Décrivez votre projet ou votre activité..."></textarea></label>
-        <label class="consent"><input type="checkbox" required> <span>J’accepte que mes informations soient utilisées pour répondre à ma demande.</span></label>
-        <button class="btn btn-yellow full" type="submit">✈ Envoyer ma demande</button>
+        <label>Votre message *<textarea required name="message" rows="4" placeholder="Décrivez votre projet ou votre activité..."></textarea></label>
+        <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label class="consent"><input type="checkbox" name="consent" value="oui" required> <span>J’accepte que mes informations soient utilisées uniquement pour répondre à ma demande.</span></label>
+        <button id="submitBtn" class="btn btn-yellow full" type="submit">✈ Envoyer ma demande</button>
         <p id="formStatus" class="status" aria-live="polite"></p>
       </form>
     </div>
@@ -250,7 +251,7 @@
 <dialog id="privacyDialog">
   <button class="close" data-close="privacyDialog">×</button>
   <h2>Politique de confidentialité</h2>
-  <p>Le formulaire de contact sera relié à la messagerie professionnelle avant le lancement commercial. La politique précisera alors la finalité de la collecte, la durée de conservation et les modalités d’exercice des droits.</p>
+  <p>Les informations transmises via le formulaire de contact sont utilisées pour répondre à votre demande. Le formulaire est traité via Formspree et les demandes sont adressées à la messagerie professionnelle de Pro’Jecteur. La durée de conservation et les modalités d’exercice des droits seront précisées avant le lancement commercial.</p>
 </dialog>
 
 <script src="script.js"></script>
