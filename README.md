@@ -21,8 +21,8 @@ Dès obtention du SIREN/SIRET, mettre à jour ces mentions avant le lancement co
 
 V5.1 : titre principal ajusté pour éviter toute promesse implicite de résultats : « Plus facile à trouver près de chez vous. »
 
-V6 Modern Digital
-- Palette bleu nuit / bleu électrique / blanc, accent or discret.
-- CTA principaux bleus et réduction du jaune.
-- Cartes plus aérées et premium.
-- Tarifs, textes, limites des offres et Formspree inchangés.
+V6.1 Modern Digital corrigée :
+- utilise les vraies classes CSS du site (.dark, .round-icon, .step-num, .popular, .price-card.highlight, etc.)
+- bleu nuit + bleu électrique + blanc
+- jaune supprimé de l'interface, sauf accent or discret du logo
+- contenu, tarifs, formulaire Formspree et fonctionnalités inchangés

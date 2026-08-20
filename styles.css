@@ -203,71 +203,129 @@ dialog h2{margin-bottom:14px}
   .bottom-zone{padding:24px 0}
 }
 
-/* V6 MODERN DIGITAL — visual layer */
+/* ==========================================================
+   PRO'JECTEUR V6.1 — MODERN DIGITAL (actual site classes)
+   ========================================================== */
 :root{
- --v6-navy:#081426;--v6-navy2:#0d1d35;--v6-blue:#2563eb;--v6-blue2:#3b82f6;
- --v6-gold:#e7ad32;--v6-bg:#f7f9fc;--v6-card:#fff;--v6-text:#111827;
- --v6-muted:#667085;--v6-line:#e7ebf1;--v6-soft:#eef4ff;
+  --navy:#091426;
+  --navy2:#0e1d33;
+  --yellow:#3b82f6;
+  --blue:#2563eb;
+  --text:#172033;
+  --muted:#667085;
+  --light:#f7f9fc;
+  --line:#e5eaf1;
 }
-body{background:var(--v6-bg);color:var(--v6-text)}
-.container{max-width:1180px}
-.btn{border-radius:12px!important;box-shadow:none!important;font-weight:750!important;transition:.2s ease}
-.btn:hover{transform:translateY(-1px)}
-.btn-primary,.btn-yellow,.contact button[type="submit"]{
- background:linear-gradient(135deg,var(--v6-blue),var(--v6-blue2))!important;
- color:#fff!important;border-color:transparent!important;
+
+/* Header / hero */
+.topbar{background:#091426!important;border-bottom:1px solid rgba(255,255,255,.07)!important}
+.hero{background:#091426!important}
+.navlinks a{color:#d7e0ec!important}
+.navlinks a:hover,.navlinks a.active{color:#fff!important}
+.navlinks a.active:after{background:#3b82f6!important}
+.logo-pro-fixed,.logo-jecteur-fixed{color:#fff!important}
+.logo-apostrophe-fixed{color:#e5ad3b!important}
+.logo small{color:#aebbd0!important}
+
+.hero h1{color:#fff!important;letter-spacing:-.035em!important}
+.hero h1 span{color:#5b8ff9!important}
+.hero .lead{color:#d2dbe7!important}
+.benefit b,.gicon{color:#5b8ff9!important}
+.benefit span{color:#eef3f9!important}
+.hero-visual{border-radius:18px!important;box-shadow:0 25px 60px rgba(0,0,0,.18)!important}
+
+/* All primary buttons */
+.btn-yellow{
+  background:linear-gradient(135deg,#2563eb,#4f7ff0)!important;
+  border-color:transparent!important;
+  color:#fff!important;
+  border-radius:11px!important;
+  box-shadow:0 8px 22px rgba(37,99,235,.18)!important;
 }
-.btn-outline,.btn-secondary{background:transparent!important;border-color:#aebbd0!important}
-header,.topbar,.hero{background:var(--v6-navy)!important}
-.topbar{border-bottom:1px solid rgba(255,255,255,.07)}
-nav a{color:#dbe4f0!important} nav a:hover,nav a.active{color:#fff!important}
-nav a.active::after{background:var(--v6-blue2)!important}
-.hero-copy h1{letter-spacing:-.035em}
-.hero-copy h1 span,.hero-copy h1 strong{color:var(--v6-blue2)!important}
-.hero-copy p{color:#d0d9e6!important}
-.hero .feature-item,.hero .feature-item span{color:#e6edf6!important}
-.hero .feature-icon{color:var(--v6-blue2)!important}
-.logo-apostrophe-fixed{color:var(--v6-gold)!important}
-.logo-jecteur-fixed{color:#fff!important}
-.services,.how,.bottom-zone,.faq-contact{background:var(--v6-bg)!important}
-.service-card,.why-card,.price-card{
- background:#fff!important;border:1px solid var(--v6-line)!important;border-radius:16px!important;
- box-shadow:0 10px 30px rgba(15,35,65,.055)!important;
+.btn-yellow:hover{filter:brightness(1.04);transform:translateY(-1px)}
+.btn-outline{border-color:#91a1b7!important;color:#fff!important;border-radius:11px!important}
+
+/* Services */
+.white{background:#f7f9fc!important}
+.card{
+  background:#fff!important;border:1px solid #e5eaf1!important;border-radius:16px!important;
+  box-shadow:0 10px 30px rgba(18,38,63,.055)!important;
 }
-.service-card:hover,.why-card:hover{transform:translateY(-2px);box-shadow:0 16px 36px rgba(15,35,65,.08)!important}
-.service-card .icon,.why-card .icon,.icon-circle,.circle-icon{
- background:var(--v6-soft)!important;color:var(--v6-blue)!important;
+.card:hover{box-shadow:0 16px 38px rgba(18,38,63,.08)!important;transform:translateY(-2px)}
+.round-icon{
+  background:#eef4ff!important;color:#2563eb!important;border:none!important;
 }
-.step .number,.step-number{background:var(--v6-blue)!important;color:#fff!important}
-.step-line{background:#bcd0ff!important}
-.offers,.offers-section,.why-section,.why{background:var(--v6-navy2)!important}
-.offers h2,.offers-section h2,.offers .section-subtitle,.offers-section .section-subtitle,
-.why-section h2,.why-section p.section-subtitle,.why h2,.why p.section-subtitle{color:#fff!important}
-.price-card{color:var(--v6-text)!important}
-.price-card.featured{border:2px solid var(--v6-blue2)!important;transform:none!important}
-.price-card .badge,.popular-badge{background:var(--v6-blue)!important;color:#fff!important;border-radius:999px!important}
-.price,.price-card .price{color:var(--v6-text)!important}
-.profit-card,.rentable-card{
- background:rgba(255,255,255,.055)!important;border:1px solid rgba(255,255,255,.14)!important;
- border-radius:16px!important;color:#fff!important;
+.subtitle span{color:#2563eb!important}
+
+/* How it works */
+.step-num{
+  background:#2563eb!important;color:#fff!important;
+  box-shadow:0 6px 16px rgba(37,99,235,.2)!important;
 }
-.profit-card h3,.rentable-card h3,.profit-card strong,.rentable-card strong{color:#fff!important}
-.why-card{color:var(--v6-text)!important}
+.step-num.n2,.step-num.n3{background:#2563eb!important}
+.line{background:#bfd0f7!important}
+
+/* Offers / dark section */
+.dark{background:#0e1d33!important}
+.dark .subtitle.light{color:#bfcada!important}
+.price-card{
+  background:#fff!important;border:1px solid #e5eaf1!important;border-radius:16px!important;
+  box-shadow:0 14px 36px rgba(0,0,0,.12)!important;color:#172033!important;
+}
+.price-card.highlight{border:2px solid #3b82f6!important}
+.popular{
+  background:#2563eb!important;color:#fff!important;border-radius:999px!important;
+  box-shadow:none!important;
+}
+.price-card li:before{color:#2563eb!important}
+.price-card .price{color:#172033!important}
+.roi-card{
+  background:rgba(255,255,255,.055)!important;
+  border:1px solid rgba(255,255,255,.13)!important;
+  border-radius:16px!important;
+}
+.roi b{
+  background:#1d3351!important;color:#76a3ff!important;border:1px solid rgba(255,255,255,.08)!important;
+}
+.roi p{color:#cbd5e1!important}
+.roi strong{color:#fff!important}
+
+/* Why choose */
+.trust-card{
+  border-radius:16px!important;border:1px solid #e5eaf1!important;
+  box-shadow:0 10px 28px rgba(0,0,0,.08)!important;
+}
+.trust-icon{
+  background:#eef4ff!important;color:#2563eb!important;
+}
+
+/* Bottom / CTA / FAQ / contact */
+.bottom-zone{background:#f7f9fc!important;padding-top:32px!important;padding-bottom:32px!important}
+.cta-phone{border-radius:16px!important}
+.reassure{color:#64748b!important}
+.faq details{
+  background:#fff!important;border:1px solid #e5eaf1!important;border-radius:10px!important;
+}
+.faq summary{color:#172033!important}
+.contact .mini{color:#2563eb!important}
 .contact input,.contact textarea,.contact select{
- background:#fff!important;border:1px solid #dce3ed!important;border-radius:10px!important;padding:11px 12px!important;
+  background:#fff!important;border:1px solid #dce3ed!important;border-radius:9px!important;
 }
 .contact input:focus,.contact textarea:focus,.contact select:focus{
- border-color:var(--v6-blue2)!important;outline:3px solid rgba(59,130,246,.15)!important;
+  border-color:#3b82f6!important;outline:3px solid rgba(59,130,246,.13)!important;
 }
-.privacy-inline{color:var(--v6-blue)!important}
-details{border:1px solid var(--v6-line)!important;background:#fff!important;border-radius:10px!important;margin-bottom:8px!important}
-summary{padding:12px 14px!important}
-details p{padding:0 14px 14px!important;color:var(--v6-muted)!important}
-footer{background:var(--v6-navy)!important}
-dialog{border:0!important;border-radius:18px!important;box-shadow:0 30px 80px rgba(0,0,0,.25)!important}
-.accent,.highlight{color:var(--v6-blue2)!important}
+.privacy-inline{color:#2563eb!important}
+
+/* Footer */
+footer{background:#091426!important;border-top:1px solid rgba(255,255,255,.06)!important}
+.footer-links,.footer-links button{color:#c3cedb!important}
+
+/* Modals */
+dialog{border-radius:16px!important;box-shadow:0 30px 80px rgba(0,0,0,.28)!important}
+
+/* Mobile polish */
 @media(max-width:760px){
- .hero-copy{padding-top:42px!important;padding-bottom:34px!important}
- .hero-copy h1{font-size:clamp(34px,10vw,48px)!important;line-height:1.03!important}
- .btn{min-height:44px}
+  .hero h1{font-size:36px!important;line-height:1.04!important}
+  .hero-copy{padding-top:38px!important}
+  .price-card,.trust-card,.card{border-radius:14px!important}
 }
