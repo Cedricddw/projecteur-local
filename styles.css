@@ -188,3 +188,17 @@ dialog::backdrop{background:rgba(0,0,0,.55)}
 .logo-apostrophe-fixed::after,
 .logo-jecteur-fixed::before,
 .logo-jecteur-fixed::after{content:none!important;display:none!important;}
+
+/* V5 — finitions commerciales, formulaire et accessibilité */
+.contact select{width:100%;padding:9px 10px;border:1px solid #dce1e5;border-radius:5px;margin-top:3px;font-size:11px;background:#fff;color:var(--text)}
+.contact input:focus,.contact textarea:focus,.contact select:focus{outline:2px solid rgba(255,186,0,.45);border-color:#d89c00}
+.privacy-inline{border:0;background:none;padding:0;color:#3156b8;text-decoration:underline;cursor:pointer;font-size:inherit}
+.price-card li small{display:inline;color:#66717c}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgba(255,186,0,.75);outline-offset:3px}
+dialog p{font-size:13px;line-height:1.55;color:#334052}
+dialog h2{margin-bottom:14px}
+@media(max-width:760px){
+  .topbar .btn-small{font-size:11px;padding:10px 13px}
+  .hero-copy{padding-top:34px}
+  .bottom-zone{padding:24px 0}
+}

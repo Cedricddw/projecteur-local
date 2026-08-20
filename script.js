@@ -27,7 +27,7 @@ form.addEventListener("submit", async (e) => {
     if (response.ok) {
       form.reset();
       status.className = "status success";
-      status.textContent = "✓ Merci ! Votre demande a bien été envoyée. Je vous répondrai dès que possible.";
+      status.textContent = "✓ Merci ! Votre demande a bien été envoyée. Réponse sous 48 h ouvrées.";
     } else {
       status.className = "status error";
       status.textContent = "L’envoi n’a pas abouti. Réessayez dans quelques instants.";
@@ -64,3 +64,8 @@ window.addEventListener("scroll", () => {
   }
   navLinks.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + current));
 });
+
+const privacyInlineBtn = document.getElementById("privacyInlineBtn");
+if (privacyInlineBtn) {
+  privacyInlineBtn.addEventListener("click", () => document.getElementById("privacyDialog").showModal());
+}
