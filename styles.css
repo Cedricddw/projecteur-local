@@ -43,3 +43,19 @@ footer{background:#041327;color:#fff;padding:35px 0}.footer-grid{display:grid;gr
 @media(max-width:800px){
   .approved-social{height:330px!important;background-size:contain!important}
 }
+
+/* V9.3 — logos 3D validés, sans encadré */
+.approved-social{
+  height:430px!important;
+  background-image:url("assets/social-logos-3d-approved.png")!important;
+  background-repeat:no-repeat!important;
+  background-position:center!important;
+  background-size:contain!important;
+  background-color:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+  overflow:visible!important;
+}
+@media(max-width:800px){
+  .approved-social{height:330px!important}
+}
