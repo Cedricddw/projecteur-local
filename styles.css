@@ -162,3 +162,29 @@ dialog::backdrop{background:rgba(0,0,0,.55)}
   font-variant-ligatures: none;
   letter-spacing: normal;
 }
+
+/* V4.3 — logo reconstruit proprement */
+.logo-main-fixed{
+  display:block;
+  font-weight:900;
+  line-height:.9;
+  letter-spacing:.4px;
+  white-space:nowrap;
+}
+.logo-pro-fixed{color:#fff;}
+.logo-apostrophe-fixed{
+  color:#ffbf1d;
+  display:inline-block;
+  margin:0 1px;
+  font-family:Arial,Helvetica,sans-serif;
+  font-weight:900;
+}
+.logo-jecteur-fixed{color:#ffbf1d;}
+.logo-main-fixed::before,
+.logo-main-fixed::after,
+.logo-pro-fixed::before,
+.logo-pro-fixed::after,
+.logo-apostrophe-fixed::before,
+.logo-apostrophe-fixed::after,
+.logo-jecteur-fixed::before,
+.logo-jecteur-fixed::after{content:none!important;display:none!important;}
