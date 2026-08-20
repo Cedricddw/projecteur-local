@@ -28,3 +28,18 @@ footer{background:#041327;color:#fff;padding:35px 0}.footer-grid{display:grid;gr
 .n-google{background:linear-gradient(145deg,#fff,#e9eef7)!important}
 .g-logo{font-size:64px!important;font-weight:900!important;color:#4285f4!important;text-shadow:-2px 2px 0 #34a853,2px -2px 0 #ea4335,2px 2px 0 #fbbc05}
 .social-visual:after{content:"";position:absolute;left:25%;right:8%;bottom:14%;height:26px;background:#1767ff;filter:blur(24px);opacity:.48;border-radius:50%}
+
+/* V9.2 — composition sociale validée, intégrée telle quelle */
+.approved-social{
+  height:420px!important;
+  background-image:url("assets/social-logos-approved.png")!important;
+  background-repeat:no-repeat!important;
+  background-position:center!important;
+  background-size:contain!important;
+  position:relative!important;
+}
+.approved-social .network,.approved-social .orbit{display:none!important}
+.approved-social:after{display:none!important}
+@media(max-width:800px){
+  .approved-social{height:330px!important;background-size:contain!important}
+}
