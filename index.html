@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Pro’Jecteur accompagne les professionnels dans leur visibilité locale : fiche Google, avis clients, contenus et suivi de présence en ligne.">
 <title>Pro’Jecteur — Visibilité locale</title>
-<link rel="stylesheet" href="styles.css?v=12">
+<link rel="stylesheet" href="styles.css?v=12-20261014">
 </head>
 <body>
 <header class="topbar">
@@ -61,7 +61,7 @@
     <div class="section-intro"><span class="kicker">LES OFFRES</span><h2>Vous savez exactement ce qui est inclus.</h2><p>Deux formules simples : une optimisation ciblée pour démarrer, puis un suivi mensuel si vous souhaitez entretenir votre visibilité.</p></div>
     <div class="pricing">
       <article class="price-card">
-        <div class="card-top"><div><span class="offer-tag">INTERVENTION UNIQUE</span><h3>Pack Pro’Jecteur</h3><p>Votre présence locale remise au propre et optimisée.</p></div><div class="price">99 €<small>paiement unique à la commande</small></div></div>
+        <div class="card-top"><div><span class="offer-tag">INTERVENTION UNIQUE</span><h3>Pack Pro’Jecteur</h3><p>Votre présence locale remise au propre et optimisée.</p></div><div class="price">99 €<small>acompte de 60 % à l’acceptation</small></div></div>
         <div class="divider"></div>
         <ul>
           <li>Analyse de votre visibilité locale</li>
@@ -72,7 +72,13 @@
           <li>Méthode pour développer vos avis clients</li>
           <li>Compte rendu des optimisations réalisées</li>
         </ul>
-        <a class="btn dark" href="#contact">Choisir le Pack</a>
+        <div class="payment-plan" aria-label="Échéancier du Pack à 99 euros">
+          <strong>Un paiement en deux étapes</strong>
+          <p><b>59,40 € à l’acceptation du devis</b><br>Acompte de 60 % pour confirmer votre commande.</p>
+          <p><b>39,60 € à la livraison</b><br>Solde de 40 % à régler par virement, après déduction de l’acompte.</p>
+          <p class="payment-detail">Total : 99 €. TVA non applicable, art. 293 B du code général des impôts. L’envoi du formulaire ne déclenche aucun paiement. Paiement par virement bancaire. Le RIB est transmis avec la facture d’acompte après acceptation du devis. La prestation commence après réception de l’acompte, sous réserve des délais légaux applicables.</p>
+        </div>
+        <a class="btn dark" href="#contact">Demander le Pack</a>
       </article>
       <article class="price-card featured">
         <div class="card-top"><div><span class="offer-tag">ACCOMPAGNEMENT MENSUEL</span><h3>Suivi Pro’Jecteur</h3><p>Votre visibilité reste suivie et cohérente dans le temps.</p></div><div class="price">69 €<small>/ mois, payable à l’avance</small></div></div>
@@ -85,8 +91,8 @@
           <li>Recommandations d’amélioration prioritaires</li>
           <li>Mini-bilan mensuel des actions</li>
         </ul>
-        <p class="note">Sans engagement de durée ; résiliation avant la prochaine période mensuelle. Publicité payante, création de site et community management quotidien non inclus.</p>
-        <a class="btn primary" href="#contact">Choisir le Suivi</a>
+        <p class="note">Sans engagement de durée ; résiliation par e-mail à contact@projecteur-local.fr avant la prochaine période mensuelle. Paiement de 69 € par virement, avant le début de chaque période. TVA non applicable, art. 293 B du code général des impôts. Publicité payante, création de site et community management quotidien non inclus.</p>
+        <a class="btn primary" href="#contact">Demander le Suivi</a>
       </article>
     </div>
   </div>
@@ -105,13 +111,14 @@
 
 <section class="contact-section" id="contact">
   <div class="wrap contact-box">
-    <div class="contact-copy"><span class="kicker">CONTACT</span><h2>Parlons de votre visibilité.</h2><p>Décrivez simplement votre activité et votre besoin. Vous recevrez une réponse claire sur ce que Pro’Jecteur peut prendre en charge.</p><div class="contact-note">Aucun engagement à l’envoi du formulaire. Les résultats de visibilité ou de classement Google ne sont pas garantis.</div></div>
+    <div class="contact-copy"><span class="kicker">CONTACT</span><h2>Parlons de votre visibilité.</h2><p>Décrivez simplement votre activité et votre besoin. Vous recevrez une réponse claire sur ce que Pro’Jecteur peut prendre en charge.</p><div class="contact-note">Aucun engagement ni paiement à l’envoi du formulaire. Pour le Pack à 99 €, l’acompte de 59,40 € est dû à l’acceptation du devis, puis le solde de 39,60 € à la livraison, sous réserve des délais légaux applicables. Les résultats de visibilité ou de classement Google ne sont pas garantis.</div></div>
     <form action="https://formspree.io/f/mnpalrao" method="POST">
-      <div class="form-grid"><label>Nom et prénom<input name="name" required></label><label>E-mail<input name="email" type="email" required></label></div>
-      <label>Entreprise<input name="company"></label>
-      <label>Votre besoin<select name="need"><option>Pack Pro’Jecteur — 99 €</option><option>Suivi Pro’Jecteur — 69 €/mois</option><option>Diagnostic / conseil</option><option>Autre demande</option></select></label>
-      <label>Votre message<textarea name="message" placeholder="Parlez-moi brièvement de votre activité et de ce que vous souhaitez améliorer…" required></textarea></label>
-      <label class="consent"><input type="checkbox" name="consent" value="oui" required><span>J’ai pris connaissance de la <a href="confidentialite.html" target="_blank" rel="noopener">politique de confidentialité</a> concernant le traitement de mes données pour répondre à ma demande.</span></label>
+      <div class="form-grid"><label>Nom et prénom *<input name="name" required></label><label>E-mail *<input name="email" type="email" required></label></div>
+      <label>Entreprise (facultatif)<input name="company"></label>
+      <label>Votre besoin<select name="need"><option>Pack Pro’Jecteur — 99 € (acompte 59,40 €)</option><option>Suivi Pro’Jecteur — 69 €/mois</option><option>Diagnostic / conseil</option><option>Autre demande</option></select></label>
+      <label>Votre message *<textarea name="message" placeholder="Parlez-moi brièvement de votre activité et de ce que vous souhaitez améliorer…" required></textarea></label>
+      <label class="consent"><input type="checkbox" name="consent" value="oui"><span>J’ai pris connaissance de la <a href="confidentialite.html" target="_blank" rel="noopener">politique de confidentialité</a> concernant le traitement de mes données pour répondre à ma demande.</span></label>
+      <p class="form-privacy">* Champs obligatoires pour traiter votre demande. Pro’Jecteur utilise vos informations pour vous répondre et préparer, si nécessaire, un devis, sur la base de son intérêt légitime ou des mesures précontractuelles applicables. Le formulaire est transmis via Formspree. Pour exercer vos droits : <a href="mailto:contact@projecteur-local.fr">contact@projecteur-local.fr</a>. <a href="confidentialite.html">En savoir plus sur vos données</a>.</p>
       <button class="btn primary submit" type="submit">Envoyer ma demande</button>
     </form>
   </div>
